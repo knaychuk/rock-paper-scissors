@@ -3,23 +3,38 @@ const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 const userScore = document.getElementById('user-score');
 const computerScore = document.getElementById('computer-score');
+const userChoice = document.getElementById('user-choice');
+const computerChoice = document.getElementById('computer-choice');
 
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
     const randomNum = Math.floor(Math.random() * 3);
+
+    //displays computer choice on browser
+    if(randomNum === 0) {
+        computerChoice.innerHTML = "Rock";
+    } else if(randomNum === 1) {
+        computerChoice.innerHTML = "Paper";
+    } else if(randomNum === 2) {
+        computerChoice.innerHTML = "Scissors";
+    }
+
     return choices[randomNum];
 
 }
 
 rock.addEventListener("click", function() {
+    userChoice.innerHTML = "Rock";
     compare("r");
 });
 
 paper.addEventListener("click", function() {
+    userChoice.innerHTML = "Paper";
     compare("p");
 });
 
 scissors.addEventListener("click", function() {
+    userChoice.innerHTML = "Scissors";
     compare("s");
 });
 
@@ -54,9 +69,3 @@ function compare(choice) {
 }
 
 
-
-
-// function change() {
-//     score++;
-//     userScore.innerHTML = score;
-// }
