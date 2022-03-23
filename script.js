@@ -5,6 +5,7 @@ const userScore = document.getElementById('user-score');
 const computerScore = document.getElementById('computer-score');
 const userChoice = document.getElementById('user-choice');
 const computerChoice = document.getElementById('computer-choice');
+const outcome = document.getElementById('outcome');
 
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
@@ -47,25 +48,28 @@ function compare(choice) {
     console.log("user choice " + userChoice);
     console.log("computer choice " + computerChoice);
     if(userChoice === computerChoice)  {
-        console.log("its a draw");
+        outcome.innerHTML = "It's a Draw";
     } else if (userChoice === 'r' && computerChoice === 's') {
         uScore++;
         userScore.innerHTML = uScore;
-        console.log("you win");
+        outcome.innerHTML = "YOU WIN!";
     } else if (userChoice === 'p' && computerChoice === 'r') {
         uScore++;
         userScore.innerHTML = uScore;
-        console.log("you win");
+        outcome.innerHTML = "YOU WIN!";
     } else if (userChoice === 's' && computerChoice === 'p') {
         uScore++;
         userScore.innerHTML = uScore;
-        console.log("you win");
+        outcome.innerHTML = "YOU WIN!";
     } else {
         cScore++;
         computerScore.innerHTML = cScore;
-        console.log("you lose");
+        outcome.innerHTML = "Computer wins";
     }
 
 }
+
+
+
 
 

@@ -10,23 +10,26 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="score-container">
+            <div id="user-score" class="score-text">0</div>
+            <div class="choices">
+                <div id="user-choice" class="text">USER</div>
+                <div class="text">VS</div>
+                <div id="computer-choice" class="text">COMPUTER</div>
+            </div>
+            <div id="computer-score" class="score-text">0</div>
 
-    <div class="score-container">
-        <div id="user-score">0</div>
-        <div id="user-choice">User Choice</div>
-        <div>VS</div>
-        <div id="computer-choice">Computer Choice</div>
-        <div id="computer-score">0</div>
-
-    </div>
-
-    <div class="buttons">
-        <img id="rock" src="/assets/rock.svg" onmouseover="this.src='/assets/rock-alt.svg'"
-            onmouseout="this.src='/assets/rock.svg'" alt="Rock">
-        <img id="paper" src="/assets/paper.svg" onmouseover="this.src='/assets/paper-alt.svg'"
-            onmouseout="this.src='/assets/paper.svg'" alt="Paper">
-        <img id="scissors" src="/assets/scissors.svg" onmouseover="this.src='/assets/scissors-alt.svg'"
-            onmouseout="this.src='/assets/scissors.svg'" alt="Scissors">
+        </div>
+        <div id="outcome" class="outcome">Select Rock, Paper, or Scissors</div>
+        <div class="buttons">
+            <img id="rock" src="/assets/rock.svg" onmouseover="this.src='/assets/rock-alt.svg'"
+                onmouseout="this.src='/assets/rock.svg'" alt="Rock">
+            <img id="paper" src="/assets/paper.svg" onmouseover="this.src='/assets/paper-alt.svg'"
+                onmouseout="this.src='/assets/paper.svg'" alt="Paper">
+            <img id="scissors" src="/assets/scissors.svg" onmouseover="this.src='/assets/scissors-alt.svg'"
+                onmouseout="this.src='/assets/scissors.svg'" alt="Scissors">
+        </div>
     </div>
 
 
