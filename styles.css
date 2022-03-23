@@ -1,4 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+
+body {
+    font-family: 'VT323', monospace;
+
+}
+
+.score-container {
+    display: flex;
+}
+
+
 .buttons img {
     width: 200px;
     height: 200px;
+}
+
+
+#rock:hover {
+    cursor: pointer;
+}
+
+#paper:hover {
+    cursor: pointer;
+}
+
+#scissors:hover {
+    cursor: pointer;
 }
